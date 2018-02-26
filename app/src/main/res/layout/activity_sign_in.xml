@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+
+    tools:context="com.example.rentit.SignInActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/sign-in_layout"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/icon"
+            style="@style/ThemeOverlay.FirebaseIcon"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:contentDescription="@string/desc_firebase_lockup"
+            android:src="@drawable/to_let" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="50dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/email_login"
+                android:hint="Email"
+                android:textColorHint="@color/colorPrimary"
+                />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="50dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/password_login"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColorHint="@color/colorPrimary"
+                />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="50dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/username_signup"
+                android:hint="Username"
+                android:visibility="gone"
+                android:textColorHint="@color/colorPrimary"
+                />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="50dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/phone_signup"
+                android:hint="Phone"
+                android:visibility="gone"
+                android:inputType="number"
+                android:textColorHint="@color/colorPrimary"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:paddingTop="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+
+            >
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:text="create new account"
+                android:id="@+id/signup_button"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/shape"
+                />
+
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:text="Sign In"
+                android:id="@+id/signin_button"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shape"
+                />
+
+            <com.google.android.gms.common.SignInButton
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/google-signin"
+                ></com.google.android.gms.common.SignInButton>
+
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:text="Verify Email"
+                android:visibility="gone"
+                android:id="@+id/verify"
+                android:textColor="#0093D9"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shape"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

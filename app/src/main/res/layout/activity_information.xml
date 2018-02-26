@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.rentit.InformationActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:src="@mipmap/icon"
+        android:visibility="visible"
+        android:id="@+id/icon"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:id="@+id/form_layout"
+        android:visibility="gone"
+        >
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/city"
+                android:hint="City"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/address"
+                android:hint="Adress"
+                />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/phone"
+                android:hint="Phone to display"
+                android:inputType="number"
+                />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/description"
+                android:hint="Description. E.g. Number of rooms."
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:background="@drawable/shape"
+                android:text="IMAGE 1"
+                android:id="@+id/image1"
+                android:textColor="@color/colorPrimary"
+                />
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/shape"
+                android:text="IMAGE 2"
+                android:id="@+id/image2"
+                android:textColor="@color/colorPrimary"
+                />
+
+        </LinearLayout>
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/shape"
+            android:text="UPLOAD"
+            android:id="@+id/upload"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:id="@+id/images_layout"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        >
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="24dp"
+            android:id="@+id/image_upload1"
+            />
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="24dp"
+            android:id="@+id/image_upload2"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/main_layout"
+        android:visibility="visible"
+        >
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="#FFFFFF"
+            android:text="ADD NEW RENT"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/add"
+            />
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="#FFFFFF"
+            android:layout_marginTop="20dp"
+            android:text="view your rents"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/show"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>

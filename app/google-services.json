@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "708576220312",
+    "firebase_url": "https://rentit-aashish.firebaseio.com",
+    "project_id": "rentit-aashish",
+    "storage_bucket": "rentit-aashish.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:708576220312:android:6152631383b0f5f6",
+        "android_client_info": {
+          "package_name": "com.example.rentit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "708576220312-2oj56iqn8nt0qbee2c812ib40u4abspc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rentit",
+            "certificate_hash": "0738cb421f8fb6f215eade178b057277908d8073"
+          }
+        },
+        {
+          "client_id": "708576220312-0cunvagb69iu9a00lnv8438s1iducs18.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOBYr5JEqSe4MoAXhleeXVu439BdFXw2o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "708576220312-0cunvagb69iu9a00lnv8438s1iducs18.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
